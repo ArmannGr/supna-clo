@@ -1,16 +1,61 @@
-# React + Vite
+# Supna Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, minimalist website for the streetwear brand **Supna**. Built with React, Vite, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Design**: Strict Black & White aesthetic with a toggleable Dark/Light mode.
+*   **Animations**: Smooth page transitions and micro-interactions using Framer Motion.
+*   **Sections**:
+    *   **Home**: Landing page with waitlist CTA.
+    *   **Products**: Grid showcase of the latest collection.
+    *   **Archive**: Masonry-style gallery of inspiration and past works.
+    *   **Waitlist**: Functional email signup form integrated with EmailJS.
+    *   **Terms**: Clean legal text display.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Framework**: React + Vite
+*   **Styling**: Vanilla CSS + CSS Variables (Theming)
+*   **Animation**: Framer Motion
+*   **Routing**: React Router DOM
+*   **Backend Services**: EmailJS (for Waitlist)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+### 2. Environment Configuration
+
+Create a `.env` file in the root directory to store your EmailJS credentials. You can copy the structure below:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+> **Note:** The `.env` file is gitignored to keep your API keys secure.
+
+### 3. Running Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` to view the site.
+
+## Project Structure
+
+*   `src/components`: Reusable UI components (Navbar, Footer, ThemeToggle).
+*   `src/pages`: Individual route views (Home, Products, Archive, etc.).
+*   `src/assets`: Static images and inspirations.
+*   `src/index.css`: Global styles and theme variables.
