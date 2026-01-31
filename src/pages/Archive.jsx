@@ -1,17 +1,12 @@
 import { motion } from 'framer-motion';
-import img1 from '../assets/inspiration_1.png';
-import img2 from '../assets/inspiration_2.jpg';
-import img3 from '../assets/inspiration_3.png';
-import img4 from '../assets/inspiration_4.jpg';
+import whiteTee2 from '../assets/supna_white_t_2.png';
+import whiteTee3 from '../assets/supna_white_t_3.png';
+import whiteTee4 from '../assets/supna_white_t_4.png';
 
 const archiveItems = [
-    { id: 1, src: img1, alt: "Inspiration 1", size: "large" },
-    { id: 2, src: img2, alt: "Inspiration 2", size: "small" },
-    { id: 3, src: img3, alt: "Inspiration 3", size: "medium" },
-    { id: 4, src: img4, alt: "Inspiration 4", size: "small" },
-    // Duplicates for grid fulness
-    { id: 5, src: img2, alt: "Inspiration 2", size: "small" },
-    { id: 6, src: img1, alt: "Inspiration 1", size: "medium" },
+    { id: 1, src: whiteTee2, alt: "Supna White Tee - View 2" },
+    { id: 2, src: whiteTee3, alt: "Supna White Tee - View 3" },
+    { id: 3, src: whiteTee4, alt: "Supna White Tee - View 4" },
 ];
 
 export default function Archive() {
